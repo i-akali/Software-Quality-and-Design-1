@@ -29,11 +29,18 @@ public class DrawShapesFromFile {
 
                 double x = Double.parseDouble(scope[1]);
                 double y = Double.parseDouble(scope[2]);
-                Color color = switch (scope[3]) {
-                    case "blue" -> Color.BLUE;
-                    case "green" -> Color.GREEN;
-                    default -> Color.RED;
-                };
+                Color color;
+                switch (scope[3]) {
+                    case "blue":
+                        color = Color.BLUE;
+                        break;
+                    case "green":
+                        color = Color.GREEN;
+                        break;
+                    default:
+                        color = Color.RED;
+                        break;
+                }
 
                 //Assign radius if a circle
                 if(scope[0].equals("c")) {

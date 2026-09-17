@@ -22,6 +22,11 @@ public abstract class  DrawableShape {
         return y;
     }
 
+    public Color getColor()
+    {
+        return color;
+    }
+
     public abstract double area();
 
     public abstract void draw();
