@@ -65,7 +65,7 @@ public class DonationUtils {
 
     public static void main(String[] args) {
         Donation a = new Donation("Mike", 60);
-        Donation b = new Donation("Steven", 0);
+        Donation b = new Donation("Mike", 10);
         Donation c = new Donation("Mike", 60);
         Donation d = new Donation("Hailey", 10.0);
 
