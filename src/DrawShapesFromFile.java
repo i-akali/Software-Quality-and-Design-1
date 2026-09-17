@@ -54,6 +54,7 @@ public class DrawShapesFromFile {
                 line = reader.readLine();
             }
 
+            reader.close();
             return shapes;
         }
         catch(IOException e) {
